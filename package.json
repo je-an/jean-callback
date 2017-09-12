@@ -1,0 +1,21 @@
+{
+  "name": "jean-callback",
+  "version": "0.0.4",
+  "description": "Provides a simple mechanism for registering callbacks and broadcast to them",
+  "main": ".js",
+  "scripts": {
+    "test": "open spec/spec-runner.html in browser"
+  },
+  "keywords": [
+    "callback",
+    "broadcast",
+    "register",
+    "unregister"
+  ],
+  "author": "Jeremias Andris",
+  "license": "MIT",
+  "dependencies": {
+    "almond": "^0.3.3",
+    "jean-type-check": "0.0.3"
+  }
+}
