@@ -17,5 +17,9 @@
   "dependencies": {
     "almond": "^0.3.3",
     "jean-type-check": "0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/je-an/jean-callback.git"
   }
 }
