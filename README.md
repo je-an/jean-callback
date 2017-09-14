@@ -20,7 +20,7 @@ require(["path/to/Callback"], function(Callback){
     cb.broadcastToFunctions({ name: "name" });
 
     // Remove a function
-    cb.registerFunction(fnOne);
+    cb.unregisterFunction(fnOne);
 });
 ```
 
