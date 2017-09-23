@@ -4,7 +4,8 @@
   "description": "Provides a simple mechanism for registering callbacks and broadcast to them",
   "main": ".js",
   "scripts": {
-    "test": "open spec/spec-runner.html in browser"
+    "test": "open spec/spec-runner.html in browser",
+    "coverage": "istanbul cover src/Callback.js"
   },
   "keywords": [
     "callback",
@@ -21,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/je-an/jean-callback.git"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5"
   }
 }

@@ -579,13 +579,13 @@ define('src/Callback',["TypeCheck"], function (TypeCheck) {
      * @alias Callback 
      * @constructor
      * @param {Object} options - options object
-     * @param {Any} options.id - callback identifier
+     * @param {String} options.id - callback identifier
      */
     var Callback = function (options) {
-        if (!TypeCheck.isDefined(options)) {
+        if (!TypeCheck.isDefined(options) || !TypeCheck.isObject(options)) {
             options = {};
         }
-        this.id = options.id ? options.id : "";
+        this.id = TypeCheck.isString(options.id) ? options.id : "";
         this._callbacks = [];
     };
     /**
