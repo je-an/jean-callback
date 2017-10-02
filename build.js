@@ -1,8 +1,9 @@
 ({
     baseUrl: '.',
-    out: 'dist/Callback.js',
-    optimize: 'none',
-    include: ["node_modules/almond/almond", "src/Callback"],
+    out: 'dist/jean-callback.js',
+    optimize: 'uglify2',
+    name: "node_modules/jean-amd/dist/jean-amd",
+    include: ["src/Callback"],
     wrap: {
         start: 
         "(function (root, factory) { \n" +
