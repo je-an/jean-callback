@@ -13,7 +13,7 @@ define(["TypeCheck"], function (TypeCheck) {
         }
         this.id = TypeCheck.isString(options.id) ? options.id : "";
         this._callbacks = [];
-    };  
+    };
     /**
      * Register function as callback
      * @param {Function} callback - function, to be registered

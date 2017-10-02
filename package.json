@@ -15,8 +15,8 @@
   "author": "Jeremias Andris",
   "license": "MIT",
   "dependencies": {
-    "jean-amd": "0.0.4",
-    "jean-type-check": "0.0.3"
+    "jean-amd": "0.0.5",
+    "jean-type-check": "0.0.5"
   },
   "repository": {
     "type": "git",
