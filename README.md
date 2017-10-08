@@ -2,7 +2,7 @@
 
 Provides a simple mechanism for registering callbacks and broadcast to them.
 
-## Supported Systems
+## Support
 Supports both CommonJS and AMD eco system. If there is no loader, Callback is registered as a browser variable.
 
 ## Code Example
