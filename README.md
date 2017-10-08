@@ -2,27 +2,42 @@
 
 Provides a simple mechanism for registering callbacks and broadcast to them.
 
-## Code Example
+## Supported Systems
+Supports both CommonJS and AMD eco system. If there is no loader, Callback is registered as a browser variable.
 
+## Code Example
+- Use it as browser variable 
+```js
+var fnOne = function (params) { /* Work with params */ },
+    fnTwo = function (params) { /* Work with params */ },
+    fnThree = function (params) { /* Work with params */ }; 
+
+// Create Callback
+var cb = new Callback();
+
+// Register functions
+cb.registerFunction(fnOne);
+cb.registerFunction(fnTwo);
+cb.registerFunction(fnThree);
+
+// Broadcast params to registered functions 
+cb.broadcastToFunctions({ name: "name" });
+
+// Remove a function
+cb.unregisterFunction(fnOne);
+```
+- Use it with require.js
 ```js
 require(["path/to/Callback"], function(Callback){
-     var fnOne = function (params) { /* Work with params */ },
-         fnTwo = function (params) { /* Work with params */ },
-         fnThree = function (params) { /* Work with params */ }; 
-
-    // Create Callback and register functions
-    var cb = new Callback();
-    cb.registerFunction(fnOne);
-    cb.registerFunction(fnTwo);
-    cb.registerFunction(fnThree);
-
-    // Broadcast params to registered functions 
-    cb.broadcastToFunctions({ name: "name" });
-
-    // Remove a function
-    cb.unregisterFunction(fnOne);
+     // Work with Callback
 });
 ```
+- Use it with node.js
+```js
+// Use it within node.js
+var Callback = require("jean-callback");
+```
+
 
 ## Installation
 

@@ -5,10 +5,12 @@
     name: "node_modules/jean-amd/dist/jean-amd",
     include: ["src/Callback"],
     wrap: {
-        start: 
+        start:
         "(function (root, factory) { \n" +
         " \t if (typeof define === 'function' && define.amd) { \n" +
         "\t \t define([], factory); \n" +
+        "\t} else if(typeof module === 'object' && module.exports) { \n" +
+        "\t\t module.exports = factory(); \n " +
         "\t} else { \n" +
         "\t \troot.Callback = root.Callback || {}; \n" +
         "\t \troot.Callback = factory();\n" +

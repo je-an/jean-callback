@@ -1,6 +1,6 @@
 {
   "name": "jean-callback",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Provides a simple mechanism for registering callbacks and broadcast to them",
   "main": "Callback.js",
   "scripts": {
@@ -15,8 +15,8 @@
   "author": "Jeremias Andris",
   "license": "MIT",
   "dependencies": {
-    "jean-amd": "0.0.5",
-    "jean-type-check": "0.0.5"
+    "jean-amd": "1.0.1",
+    "jean-type-check": "1.0.0"
   },
   "repository": {
     "type": "git",
