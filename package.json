@@ -1,6 +1,6 @@
 {
   "name": "jean-callback",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides a simple mechanism for registering callbacks and broadcast to them",
   "main": "dist/jean-callback.js",
   "scripts": {
